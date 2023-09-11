@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="8" time="158.579">
+    <testcase classname="Login" name="Verification of Login Function" time="7.445">
+        <system-out><![CDATA[Given the user on the belgenet page.........................................passed
+When the user clicks the Demo button........................................passed
+And the user enters the username as "botcu".................................passed
+And the user enters the password as "spider"................................passed
+And the user clicks the login button........................................passed
+Then the user should be redirected to the home page.........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Create document" name="Open Evrak Olustur page" time="7.686">
+        <system-out><![CDATA[Given the user is logged  in................................................passed
+When the user clicks on Evrak Islemleri button..............................passed
+And the user clicks on Evrak Olustur button.................................passed
+Then the Evrak Olustur window should open...................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Create document" name="Fill the Bilgileri part of Evrak Olustur" time="35.133">
+        <system-out><![CDATA[Given the Evrak Olustur page is open........................................passed
+When the user clicks Bilgileri button.......................................passed
+Then the user fills in the input part of Kaldirilacak Klasorler.............passed
+And the user fills in the input part of Geregi..............................passed
+And the user fills in the input part of Onay Akisi..........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Create document" name="Fill Editor part of Evrak Olustur" time="23.721">
+        <system-out><![CDATA[Given mandatory sections in the Bilgileri part are filled...................passed
+When the user clicks Editor button..........................................passed
+Then the user fills in the fields to be written.............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Create document" name="Fill Ekleri part of Evrak Olustur" time="14.819">
+        <system-out><![CDATA[Given the Editor is filled completely.......................................passed
+When the user clicks Ekleri button..........................................passed
+And the user fills in the input part of Ek Metni............................passed
+And the user adds files to Dosya Ekle.......................................passed
+And the user clicks Ekle button.............................................passed
+Then the added file will appear in the attachments section..................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Create document" name="Sign the created document" time="13.76">
+        <system-out><![CDATA[Given mandatory fields are filled...........................................passed
+When the user clicks Imzala button..........................................passed
+And the user selects s-Imza from signature types............................passed
+And the user clicks Imzala button in pop-up.................................passed
+And the user selects Evet option available in the pop-up....................passed
+Then the document creation is successful....................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Create document" name="View the generated document in Imzaladiklarim list" time="16.812">
+        <system-out><![CDATA[Given the user is in main page..............................................passed
+When the user clicks Islem Yaptiklarim......................................passed
+And the user clicks Imzaladiklarim..........................................passed
+And the user clicks Icerik Goster on the first document.....................passed
+And the user clicks Ekleri button in the document on Imzaladiklarim.........passed
+Then the Dosya Adi should be the same as in the generated document..........passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Create document" name="View the generated document in Teslim Alinmayi Bekleyenler list" time="38.96">
+        <system-out><![CDATA[Given the user is in main page..............................................passed
+When the user clicks Birim Evraklari........................................passed
+And the user clicks Teslim Alinmayi Bekleyenler.............................passed
+And the user selects the departmant of the generated document...............passed
+And the user clicks Icerik Goster on the first document.....................passed
+And the user clicks Ekleri button in the document on Teslim Alinmayi Bekleyenler.passed
+Then the Dosya Adi should be the same as in the generated document..........passed
+]]></system-out>
+    </testcase>
+</testsuite>
